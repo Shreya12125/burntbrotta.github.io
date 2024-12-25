@@ -14,6 +14,61 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
 <script src="script.js"></script>
 </head>
+<style>
+.reviews-container {
+  text-align: center;
+  padding: 20px;
+  font-family: 'Poppi
+}
+.review-list {
+  display: flex;
+  flex-direction: col
+  align-items: center
+  gap: 20px;
+}
+.review-item {
+  display: flex;
+  align-items: center
+  gap: 20px;
+  padding: 20px;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 20px
+  background-color: 
+  box-shadow: 0 4px 6
+  transition: transfo
+}
+.review-item:hover {
+  transform: scale(1.
+  box-shadow: 0 8px 1
+}
+.profile-pic {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.review-content {
+  text-align: left;
+}
+.review-username {
+  font-weight: bold;
+  font-size: 16px;
+}
+.review-date {
+  font-size: 12px;
+  color: gray;
+  margin-top: 5px;
+}
+.review-stars {
+  color: gold;
+  margin-right: 3px;
+}
+.review-text {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+</style>
 
 
 <body>
@@ -105,7 +160,9 @@
                           <form>
 		<button class="button">Submit</button>
 	</form>	
-
+  <div class="reviews-container">
+    <div id="review-list" class="review-list"></div>
+  </div>
   <!-- Quote for fun -->
 	<div class="quote">
 		<p>"We burnt it So, you dont have to"  </p>
